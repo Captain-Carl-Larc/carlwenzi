@@ -1,16 +1,18 @@
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin,Github } from 'lucide-react';
 
 const Footer = () => {
-    const socialLinks = [
-        { name: 'Facebook', icon: Facebook, url: 'https://facebook.com' },       // Replace with your actual URLs
+    const socialLinks = [        
         { name: 'Twitter', icon: Twitter, url: 'https://x.com/kalwenzi' },         // Replace with your actual URLs
         { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/kalwenzi.carl/' },     // Replace with your actual URLs
-        { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/stephenkalwenzi/' },       // Replace with your actual URLs
+        { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/stephenkalwenzi/' },
+        {
+            name: 'Github',icon:Github, url:'https://github.com/Captain-Carl-Larc'
+        }     // Replace with your actual URLs
     ];
 
   return (
     <footer className="bg-gray-900 text-gray-400 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-y-8">
 
         {/* Social Links */}
         <div className="flex justify-center space-x-6">
@@ -22,10 +24,10 @@ const Footer = () => {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
                 aria-label={social.name}
               >
-                <Icon className="h-6 w-6" />
+                <Icon className="h-6 w-6 " />
               </a>
             );
           })}
