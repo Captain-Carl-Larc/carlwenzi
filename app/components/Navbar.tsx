@@ -49,19 +49,19 @@ const Navbar: FC<NavbarProps> = () => {
 
   return (
     <header
-      className={`bg-blue-700 margin-0 padding-0 flex flex-col  min-h-12 md:flex-row md:justify-between ${
+      className={`bg-orange-500 margin-0 padding-0 flex flex-col  min-h-12 md:min-h-20 md:flex-row md:justify-between ${
         isMenuOpen ? 'gap-y-2 ' : 'gap-y-0'
       }`}
     >
       <div id="logo-container" className="flex justify-between p-4 items-center ">
-        <p className="font-bold text-3xl">Karl</p>
-        <div className={'md:hidden font-extrabold'} onClick={handleMenuToggle}>
+        <p className="font-extrabold leading-4 text-3xl">Karl</p>
+        <div className={`md:hidden font-extrabold`} onClick={handleMenuToggle}>
           {isMenuOpen ? closeIcon : openIcon}
         </div>
       </div>
       <ul
         onClick={closeMenu}
-        className={`bg-blue-500 md:bg-blue-700 pl-2 ${
+        className={`bg-gray-800 md:bg-orange-500 pl-2 ${
           isMenuOpen ? 'flex flex-col ' : 'hidden'
         } md:flex md:gap-x-4 md:items-center md:justify-center md:pr-4`}
       >
