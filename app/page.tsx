@@ -117,9 +117,10 @@ const Home: FC = () => {
       <section className="bg-orange-500 py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Main Heading */}
-          <h2 className="text-5xl font-bold text-white mb-6">
-            I am <span className="text-black bg-white px-3 py-1 rounded-md">revolutionizing</span> Tech solutions.
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 md:py-0">
+              I am <span className="text-black bg-white px-3 py-1 rounded-md whitespace-nowrap">revolutionizing</span> Tech solutions.
           </h2>
+
 
           {/* Subheading */}
           <p className="text-lg text-white opacity-80 mb-8">
