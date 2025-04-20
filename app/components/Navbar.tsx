@@ -69,7 +69,7 @@ const Navbar: FC<NavbarProps> = () => {
           <Link href={`/`}>Home</Link>
         </li>
         <li>
-          <Link href={`/About`}>About</Link>
+          <Link href={`/about-me`}>About</Link>
         </li>
         <li>
           <Link href={`/Contact`}>Contact</Link>
